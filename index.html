@@ -1,40 +1,101 @@
 
-<!-- <html lang="en-US">
-<meta name="description" content="This is a webpage for visualizing the dynamic information theory properties of food webs. Made by Jacob Usinowicz."/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
 <body>
-<p><span style="font-size: 12pt;">This is a wepage for visualizing the dynamic information properties of food webs. Here are some examples for a random food web that contains 26 species: 17 Resource, 3 Consumer, and 6 Predators. These figures are more easily navsigated using an interactive format. </p>
 
-<a href="te_graph1.html">Transfer Entropy for the random food web</a>
+<header>
+  <h2>Eco Info </h2>
+</header>
 
-<p><span style="font-size: 12pt;"> I am a postdoctoral fellow with <a href="http://oconnorlab.weebly.com/">Mary O&#8217;Connor</a>&nbsp; at UBC&#8217;s <a href="https://biodiversity.ubc.ca/">Biodiversity Research Center</p>
+<section>
+  <nav>
+    <ul>
+      <li><a href="te_graph1.html">Transfer Entropy</a></li>
+		<li>Separable Information</li>
+    	<li>Active Information </li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Visualizing the dynamic information properties of food webs</h1>
+    <p>This is a wepage for visualizing the dynamic information properties of food webs. Here are some examples for a random food web that contains 26 species: 17 Resource, 3 Consumer, and 6 Predators. These figures are more easily navsigated using an interactive format.</p>
+    <p>I am a postdoctoral fellow with <a href="http://oconnorlab.weebly.com/">Mary O&#8217;Connor</a>&nbsp; at UBC&#8217;s <a href="https://biodiversity.ubc.ca/">Biodiversity Research Center</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
 
 </body>
 </html>
- -->
 
-<body>
-  <div class="wrapper">
-    
-    <div class="left">
-	  
-      <h1 class="name">Eco Info </h1>
-      <h4 class="subtitle">Visualizing the dynamic information properties of food webs</h4>
-      <ul class="w3-ul w3-border" style="width:50%">
-    	<li><a href="te_graph1.html">Transfer Entropy</a></li>
-    	<li>Separable Information</li>
-    	<li>Active Information </li>
-  	  </ul>
-    </div>
-    
-    <div class="right">
-      <p class="summary">
-        This is a wepage for visualizing the dynamic information properties of food webs. Here are some examples for a random food web that contains 26 species: 17 Resource, 3 Consumer, and 6 Predators. These figures are more easily navsigated using an interactive format.
-      </p>
-      <ul class="other-links">
-      	I am a postdoctoral fellow with <a href="http://oconnorlab.weebly.com/">Mary O&#8217;Connor</a>&nbsp; at UBC&#8217;s <a href="https://biodiversity.ubc.ca/">Biodiversity Research Center
-      </ul>
-    </div>
-    
-  </div>
-</body>
